@@ -2,53 +2,80 @@
 <html>
 <head>
 <style>
-.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.desc {
-  padding: 15px;
+.structure {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
   text-align: center;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+}
+.section {
+  display: inline-block;
+  width: 300px;
+  margin: 20px 0;
+}
+
+.navbar {
+  list-style-type: none;
+}
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+.navbar-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+.navbar-link:hover {
+  color: #00648f;
+}
+
+.navbar-logo{
+  width: 180px;
+  height: 26.9px;
 }
 </style>
 </head>
 <body>
 
-<div class="gallery">
-  <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-  <div class="desc">Created new website</div>
+<ul class="navbar">
+  <li><img src="https://www.dominospizza.pl/getmedia/469c9e78-6dc5-43d3-87af-c033398574b1/RGB_Blue_Type_International_Horz_Dominos_Pizza.svg" class="navbar-logo" alt="logo"></li>
+  <li><a class="navbar-link" href="#">Menu and Promotions</a></li>
+  <li><a class="navbar-link" href="#">Restaurants</a></li>
+  <li><a class="navbar-link" href="#">Track order</a></li>
+  <li><a class="navbar-link" href="#">Contact</a></li>
+</ul>
+
+<div class="structure">
+  <img class="profile-pic" src="https://png.pngtree.com/png-vector/20201028/ourmid/pngtree-phone-icon-in-solid-circle-png-image_2380227.jpg" alt="Profile Picture">
+  <h1>John Doe</h1>
+  <p>Web Developer At Careerfoundry</p>
+  <p>somehting</p>
+  <hr>
+  <div class="container">
+      <div class="section">
+          <h2>I am</h2>
+          <p>An engineer</p>
+          <p>A reader</p>
+          <p>A hobby cook</p>
+        </div>
+        
+        <div class="section">
+          <h2>I like to</h2>
+          <p>Meet new people</p>
+          <p>Play guitar</p>
+          <p>Eat Icecream</p>
+        </div>
+  </div>
+  <hr>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
 
-<div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
-    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
 
 </body>
 </html>
-
-
