@@ -17,8 +17,13 @@
   margin: 20px 0;
 }
 
+.container-navbar {
+  display: flex;
+  justify-content: space-around;
+}
 .navbar {
   list-style-type: none;
+  text-align: right;
 }
 .navbar li {
   display: inline;
@@ -33,23 +38,53 @@
 }
 .navbar-link:hover {
   color: #00648f;
+  text-decoration: underline;
 }
 
 .navbar-logo{
   width: 180px;
   height: 26.9px;
+  text-align: left;
 }
+.navbar-logo:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery > img{
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.button-sign{
+  background-color: #00648f;
+  color: white;
+  border: 1px solid #d96466;
+}
+
 </style>
 </head>
 <body>
 
-<ul class="navbar">
-  <li><img src="https://www.dominospizza.pl/getmedia/469c9e78-6dc5-43d3-87af-c033398574b1/RGB_Blue_Type_International_Horz_Dominos_Pizza.svg" class="navbar-logo" alt="logo"></li>
-  <li><a class="navbar-link" href="#">Menu and Promotions</a></li>
-  <li><a class="navbar-link" href="#">Restaurants</a></li>
-  <li><a class="navbar-link" href="#">Track order</a></li>
-  <li><a class="navbar-link" href="#">Contact</a></li>
-</ul>
+  <div class="container-navbar">
+    <a href="https://www.spotify.com/ua-uk/premium/"><img src="https://www.dominospizza.pl/getmedia/469c9e78-6dc5-43d3-87af-c033398574b1/RGB_Blue_Type_International_Horz_Dominos_Pizza.svg" class="navbar-logo" alt="logo"></a>
+    <ul class="navbar">
+      <li><a class="navbar-link" href="#">Restaurants</a></li>
+      <li><a class="navbar-link" href="#">Track order</a></li>
+      <li><a class="navbar-link" href="#">Contact</a></li>
+    </ul>
+    
+  </div>
+
 
 <div class="structure">
   <img class="profile-pic" src="https://png.pngtree.com/png-vector/20201028/ourmid/pngtree-phone-icon-in-solid-circle-png-image_2380227.jpg" alt="Profile Picture">
@@ -75,7 +110,16 @@
   <hr>
 </div>
 
+<div class="gallery">
+  <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80" alt="nature">
+  <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80" alt="nature">
+  <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80" alt="nature">
+</div>
 
+
+<button class="button-sign">
+  spotify
+</button>
 
 </body>
 </html>
