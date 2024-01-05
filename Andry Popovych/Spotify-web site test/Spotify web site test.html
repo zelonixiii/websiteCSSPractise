@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        list-style-type: none;
+        color: black;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 0.9em;
+        background-color: rgb(0, 0, 0);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+
+      .header-link {
+        text-decoration: none;
+        color: white;
+      }
+
+      .header li {
+        display: inline;
+        margin-right: 20px;
+        color: black;
+      }
+
+      .header-link:hover {
+        color: rgba(82, 196, 82, 0.969);
+      }
+
+      .stick {
+        color: white;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(21, 20, 20);
+      }
+
+      .button-style-first {
+        background-color: rgb(235, 204, 204);
+        height: 52px;
+        border-radius: 40px;
+        font-size: 15px;
+        width: 410px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .button-style-second {
+        background: black;
+        color: white;
+        height: 52px;
+        border-radius: 40px;
+        font-size: 15px;
+        width: 340px;
+        font-weight: bold;
+        border: 2px, solid white;
+      }
+
+      img {
+        padding: 17px;
+      }
+
+      .structure {
+        color: white;
+        margin-left: 260px;
+      }
+
+      .h1 {
+        font-family: sans-serif;
+        margin-top: 50px;
+        font-weight: bold;
+      }
+
+      .h2 {
+        font-family: sans-serif;
+        font-weight: 100;
+      }
+
+      .txt {
+        width: 450px;
+        font-size: 11px;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      .link {
+        color: white;
+      }
+
+      .picture {
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+        flex-wrap: wrap;
+        border-radius: 40px;
+      }
+
+      .picture-txt {
+        text-align: center;
+        margin: 20px auto;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        color: white;
+        font-family: sans-serif;
+        font-size: 20px;
+      }
+
+      .section-picture {
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="header">
+      <li>
+        <a href="https://open.spotify.com/?" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/2560px-Spotify_logo_with_text.svg.png"
+            class="header-logo"
+            alt="logo"
+            width="120px"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          class="header-link"
+          href="https://www.spotify.com/ua-uk/premium/?ref=spotifycom_header_premium_button"
+          >Premium</a
+        >
+      </li>
+      <li>
+        <a
+          class="header-link"
+          href="https://support.spotify.com/ua-uk/?_gl=1*zhkvso*_gcl_au*MjU0MjExMTA4LjE3MDAzMjM0ODM."
+          >Підтримка</a
+        >
+      </li>
+      <li>
+        <a
+          class="header-link"
+          href="https://www.spotify.com/ua-uk/download/windows/"
+          >Завантажити</a
+        >
+      </li>
+      <li><a class="stick" href="#"> | </a></li>
+      <li>
+        <a class="header-link" href="https://www.spotify.com/ua-uk/signup"
+          >Зареєструватись</a
+        >
+      </li>
+      <li>
+        <a
+          class="header-link"
+          href="https://accounts.spotify.com/uk/login?continue=https%3A%2F%2Fwww.spotify.com%2Fua-uk%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DUA"
+          >Увійти</a
+        >
+      </li>
+    </ul>
+
+    <div class="structure">
+      <h1 class="h1">
+        <strong>
+          Слухайте без обмежень. <br />
+          Спробуйте безкоштовно з <br />
+          Premium Individual протягом <br />
+          1 місяць. <br
+        /></strong>
+      </h1>
+      <h2 class="h2">
+        Потім усього 4,99 USD на місяць. <br />
+        Можна скасувати будь-коли.
+      </h2>
+      <a
+        href="https://accounts.spotify.com/uk/login?continue=https%3A%2F%2Fwww.spotify.com%2Fua-uk%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DUA"
+        target="_blank"
+      >
+        <button class="button-style-first">
+          Спробуйте безкоштовно протягом 1 місяця
+        </button>
+      </a>
+      <a
+        href="https://support.spotify.com/ua-uk/article/premium-plans/"
+        target="_blank"
+      >
+        <button class="button-style-second">
+          Переглянути всі підписки Premium
+        </button>
+      </a>
+      <br />
+      <br />
+      <p class="txt">
+        Безкоштовно протягом 1 місяця, потім 4,99 USD на місяць. Пропозиція
+        доступна, лише якщо ви раніше не користувалися Premium-підпискою.
+        <a
+          class="link"
+          href="https://www.spotify.com/ua-uk/legal/premium-promotional-offer-terms/"
+          target="_blank"
+        >
+          Діють Умови..</a
+        >
+      </p>
+    </div>
+    <div class="section-picture">
+      <h3 class="picture-txt">Pictures (random)</h3>
+      <img class="picture" src="Spotify-logo.png" alt="Pic 1" />
+      <img class="picture" src="Spotify-logo.png" alt="Pic 2" />
+      <img class="picture" src="Spotify-logo.png" alt="Pic 3" />
+      <img class="picture" src="Spotify-logo.png" alt="Pic 4" />
+    </div>
+  </body>
+</html>
