@@ -20,7 +20,6 @@
 .container-navbar {
   display: flex;
   justify-content: space-around;
-  align-items: right;
 }
 .navbar {
   list-style-type: none;
@@ -72,6 +71,17 @@
   border: 1px solid #d96466;
 }
 
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: rgb(106, 255, 123);
+  border-radius: 30px;
+  padding: 20px;
+}
+
 </style>
 </head>
 <body>
@@ -121,6 +131,38 @@
 <button class="button-sign">
   spotify
 </button>
+
+
+
+<!-- <form action="example">
+  <input type="date">
+  <input type="button">
+  <input type="email">
+  <input type="file">
+  <input type="submit">
+  <input type="reset">
+  <input type="radio">
+  <input type="password">
+  <input type="checkbox">
+  <input type="color">
+</form> -->
+
+
+<form action="submit" class="contact-form">
+  <label for="first name">Name:</label>
+  <input type="text" placeholder="First Name"> <br>
+
+  <label for="first name">Last Name:</label>
+  <input type="text" placeholder="Last Name"><br>
+
+  <label for="first name">Email:</label>
+  <input type="email" placeholder="Email" autocomplete="email"><br>
+
+  <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter"></textarea>
+  <br>
+  <input type="submit">
+</form>
+
 
 </body>
 </html>
