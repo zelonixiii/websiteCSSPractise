@@ -47,6 +47,7 @@
         background-color: rgb(235, 204, 204);
         height: 52px;
         border-radius: 40px;
+        border: none;
         font-size: 15px;
         width: 410px;
         font-weight: bold;
@@ -61,7 +62,8 @@
         font-size: 15px;
         width: 340px;
         font-weight: bold;
-        border: 2px, solid white;
+        border: 2px solid white;
+        cursor: pointer;
       }
 
       img {
@@ -99,7 +101,6 @@
         width: 280px;
         height: 280px;
         margin: 30px;
-        flex-wrap: wrap;
         border-radius: 40px;
       }
 
@@ -116,11 +117,13 @@
       }
 
       .section-picture {
-        text-align: center;
-        margin: 20px auto;
-        padding: 20px;
-        border-radius: 10px;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .button-link{
+        text-decoration: none;
+        color: black;
       }
     </style>
   </head>
@@ -185,14 +188,19 @@
         Потім усього 4,99 USD на місяць. <br />
         Можна скасувати будь-коли.
       </h2>
-      <a
+      <!-- <a
         href="https://accounts.spotify.com/uk/login?continue=https%3A%2F%2Fwww.spotify.com%2Fua-uk%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DUA"
         target="_blank"
       >
         <button class="button-style-first">
           Спробуйте безкоштовно протягом 1 місяця
         </button>
-      </a>
+      </a> -->
+
+      <button class="button-style-first">
+        <a href="#" class="button-link">Спробуйте безкоштовно протягом 1 місяця</a>
+      </button>
+
       <a
         href="https://support.spotify.com/ua-uk/article/premium-plans/"
         target="_blank"
@@ -215,12 +223,17 @@
         >
       </p>
     </div>
-    <div class="section-picture">
+    
+    <div class="container-photos">
       <h3 class="picture-txt">Pictures (random)</h3>
-      <img class="picture" src="Spotify-logo.png" alt="Pic 1" />
-      <img class="picture" src="Spotify-logo.png" alt="Pic 2" />
-      <img class="picture" src="Spotify-logo.png" alt="Pic 3" />
-      <img class="picture" src="Spotify-logo.png" alt="Pic 4" />
+      <div class="section-picture">
+        <img class="picture" src="Spotify-logo.png" alt="Pic 1" />
+        <img class="picture" src="Spotify-logo.png" alt="Pic 2" />
+        <img class="picture" src="Spotify-logo.png" alt="Pic 3" />
+        <img class="picture" src="Spotify-logo.png" alt="Pic 4" />
+      </div>
     </div>
+    
+
   </body>
 </html>
