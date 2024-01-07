@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://images.pexels.com/photos/122429/leaf-nature-green-spring-122429.jpeg?cs=srgb&dl=pexels-pixabay-122429.jpg&fm=jpg);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        .container-form{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-form{
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+            color: white;
+        }
+        .content-form h3{
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .content-form p{
+            font-size: 20px;
+        }
+        label{
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+        .icon-name{
+            background-image: url(https://cdn-icons-png.flaticon.com/512/1077/1077114.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: right;
+        }
+        input[type="text"], input[type="email"]{
+            margin: 10px 0;
+            padding: 13px;
+            border-radius: 3px;
+            border: none;
+            width: 100%;
+            transition: 0.1s;
+        }
+        input[type="text"]:focus, input[type="email"]:focus{
+            outline: 3px solid #326629;
+            background-color: aliceblue;
+        }
+        textarea{
+            margin: 10px 0;
+            padding: 13px;
+            border-radius: 3px;
+            border: none;
+            width: 100%;
+            transition: 0.1s;
+        }
+        textarea:focus{
+            outline: 3px solid #326629;
+            background-color: aliceblue;
+        }
+        input[type="submit"]{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            border: 5px solid white;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            transition: 0.1s;
+        }
+        input[type="submit"]:hover{
+            cursor: pointer;
+            background-color: #870000;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transform: translateY(5px);
+        }
+
+        .button-position{
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            margin-top: -50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-form">
+        <div class="content-form">
+            <h3>GETTING IN TOuch is easy</h3>
+            <p>
+                you need a talented digital marketing gtoug We with
+                brilliant clients. Sounds like a great fit. Complete this easy
+                contact form. and let's get together:
+            </p>
+            <br>
+    
+            <form action="submit" class="contact-form">
+                <label for="first name">Name:</label><br>
+                <input class="icon-name" type="text" placeholder="First Name">
+              
+                <label for="first name">Last Name:</label><br>
+                <input type="text" placeholder="Last Name">
+              
+                <label for="first name">Email:</label><br>
+                <input type="email" placeholder="Email" autocomplete="email"><br>
+              
+                <label for="message">What's on your mind?</label><br>
+                <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter"></textarea>
+                <br>
+                <div class="button-position">
+                    <input type="submit" value="Send it">
+                </div>
+              </form>
+              <br>
+        </div>
+        
+          
+    </div>
+
+</body>
+</html>
