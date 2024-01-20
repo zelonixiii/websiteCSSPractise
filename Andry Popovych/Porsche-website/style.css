@@ -1,0 +1,81 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-size: cover;
+     background-position: center;
+     color: white;
+ }
+
+ nav {
+     display: flex;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: white;
+     margin: 0 10px;
+     margin: 10px;
+ }
+
+ nav a:last-child {
+     margin-right: 80px;
+ }
+
+ header {
+     background-color: #333;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ main {
+     padding: 50px;
+     text-align: center;
+ }
+
+ .main-txt {
+     font-weight: bold;
+     font-family: Serif;
+     font-size: 20px;
+     color: rgb(0, 0, 0);
+ }
+
+ .container {
+     position: relative;
+     width: 500px;
+ }
+
+ .container::before {
+     content: " ";
+     background-image: url(tank.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+ }
+
+ .aftermain {
+     color: black;
+ }
+
+ .strong-txt {
+     font-family: Serif;
+     font-size: 25px;
+ }
+
+ header img {
+     width: 160px;
+     height: 75px;
+ }
+
+ footer {
+     background-color: #333;
+     color: white;
+     text-align: center;
+     padding: 10px;
+     bottom: 0;
+     width: 100%;
+ }
