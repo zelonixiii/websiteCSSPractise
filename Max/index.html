@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+</head>
+<style>
+    
+    body{
+       
+        color: aquamarine;
+        background-image: url(фон.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        
+    .container-form{
+      
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-form{
+        width: 500px ;
+        height: 500px;
+        padding: 20px;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+        
+        border-radius: 3px;
+    }
+    
+        
+    
+     input[type="text"], input[type="email"]{
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+       
+       
+     }
+
+     input[type="text"]:focus, input[type="email"]:focus,textarea:focus{
+         outline:  3px solid rgb(15, 190, 190);
+         background-color: black;
+         color: aqua;
+     }
+     
+     textarea{
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        outline:  3px rgb(15, 190, 190);
+     }
+     
+     input[type="submit"]{
+         border-radius: 50%;
+         width: 100px;
+         height: 50px;
+         
+     }
+     .fi fi-sr-user{
+        color: aqua;
+        justify-content: center;
+     }
+     
+</style>
+<body>
+   
+    <div class="container-form">
+        <div class="content-form">
+          
+            <i
+            class="fi fi-sr-user"></i>
+            <h1>Реєструватись дуже просто</h1>
+            <p>Ти можеш бути тим самим учасником нашої команди просто заповни цю анкету</p>
+            
+    
+            <form action="submit" class="contact-form">
+    
+            <label for="first name">Name:</label>
+            <input type="text" placeholder="first name"><br>
+    
+            <label for="first name">Last Name:</label>
+            <input type="text" placeholder="Last name"><br>
+    
+            <label for="first name">Email:</label>
+            <input type="email" placeholder="Email" autocomplete="email"><br>
+            
+            <label for="message">Information about yourself</label>
+            <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter" ></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    
+
+        </div>
+
+        
+        
+    </div>
+    
+</body>
+</html>
