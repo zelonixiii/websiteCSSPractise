@@ -19,6 +19,11 @@ body {
   border-bottom: 2px solid rgb(214, 88, 4);
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+}
+
 .nav-content {
   list-style-type: none;
   text-align: left;
