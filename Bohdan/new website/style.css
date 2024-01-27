@@ -1,44 +1,51 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.navbar{
+
+.navbar {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-bottom: 2px solid #6d1818;
 }
-.nav-menu{
+
+.nav-menu {
     width: 700px;
 }
-.nav-content{
+
+.nav-content {
     display: flex;
     justify-content: end;
     list-style: none;
 }
-.nav-items{
+
+.nav-items {
     margin: 0 20px;
 }
-.nav-links{
+
+.nav-links {
     text-decoration: none;
     color: black;
     font-size: 15px;
     font-weight: bold;
 }
-.nav-links:hover{
+
+.nav-links:hover {
     color: #6d1818;
 }
 
 
-section{
+section {
     width: 100%;
     height: 100%;
     position: relative;
     background-color: rgb(167, 222, 178);
 }
-section::before{
+
+section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -49,7 +56,8 @@ section::before{
     background-size: cover;
     opacity: 0.5;
 }
-.main-container{
+
+.main-container {
     isolation: isolate;
     height: 400px;
     display: flex;
@@ -59,26 +67,30 @@ section::before{
     padding: 50px 0;
 }
 
-.main-text-content{
+.main-text-content {
     width: 600px;
     margin-right: 50px;
 }
-.main-subtitle{
+
+.main-subtitle {
     font-size: 20px;
     color: #db2020;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.main-headline{
+
+.main-headline {
     font-size: 40px;
     margin-bottom: 10px;
     color: #0a075c;
 }
-.main-paragraph{
+
+.main-paragraph {
     font-size: 15px;
     margin-bottom: 10px;
 }
-.main-button-started{
+
+.main-button-started {
     width: 100px;
     padding: 10px 20px;
     border: none;
@@ -89,7 +101,8 @@ section::before{
     cursor: pointer;
     margin-right: 10px;
 }
-.main-button-learn{
+
+.main-button-learn {
     width: 100px;
     padding: 10px 20px;
     border: none;
@@ -97,9 +110,46 @@ section::before{
     border-radius: 7px;
     cursor: pointer;
 }
-.main-button-started:hover{
+
+.main-button-started:hover {
     background-color: #380d0d;
 }
-.main-button-learn:hover{
+
+.main-button-learn:hover {
     background-color: #c5c5c5;
+}
+
+
+
+
+.gallery-container {
+    margin-top: 400px;
+}
+
+.gallery {
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.gallery-item {
+    text-align: center;
+    border-radius: 7px;
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+}
+
+.gallery-item>p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #6c6b6c;
+}
+
+.first {
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
