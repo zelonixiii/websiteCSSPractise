@@ -165,3 +165,21 @@ section::before {
     width: 350px;
     height: 370px;
 }
+
+.gallery-item>button {
+    margin-top: 15px;
+    width: 100px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: #6d1818;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.gallery-item>button:hover {
+    background-color: #380d0d;
+    transition: 0.5s;
+}
