@@ -117,24 +117,34 @@
 .links-aftermain-main:hover{
     color: #d31919;
 }
-.grid-container{
+.gallery{
     display: grid;
-    grid-template-columns: 400px 400px 400px 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
     gap: 10px;
-    background-color: rgb(246, 0, 0);
     padding: 10px;
+    cursor: pointer;
 }
-.grid-container > div{
-    background-color: rgb(107, 107, 107);
+.gallery-item {
     text-align: center;
-    padding: 20px 0;
-
+    border-radius: 7px;
+    background-color: #9e9e9e;
+    color: white;
+    padding: 15px;
+}
+.gallery-p-style{
+    font-size: 15px;
+    margin-bottom: 10px;
 }
  footer {
      background-color: #333;
      color: white;
      text-align: center;
      bottom: 0;
-     width: 100%;
-     padding-top: 1px; /*fix problem*/
+     width: 100%; 
+     height: 100px;
+ }
+ .style-footer{
+    padding-top: 10px;
  }
