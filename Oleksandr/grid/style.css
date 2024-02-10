@@ -1,0 +1,65 @@
+.gallery{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+.gallery-item {
+    text-align: center;
+    border-radius: 7px;
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    
+}
+.gallery-item-paragraph{
+    color: gray;
+}
+
+.content-mask{
+    display: block;
+    -webkit-mask-image: url(tractor.png);
+  mask-image: url(tractor.png);
+  
+  
+}
+.content-mask>img{
+     width: 1000px;
+
+}
+
+@media screen and (max-width: 1800px) {
+    .gallery {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .gallery {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-image-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+}
