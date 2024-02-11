@@ -19,8 +19,14 @@
 .nav-links {
     text-decoration: none;
     color:black;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
+}
+.links{
+    text-decoration: none;
+    color: rgba(153, 141, 141, 0.747);
+    font-weight: bold;
+
 }
 .logo{
     width: 70px;
@@ -28,24 +34,12 @@
 }
 .gallery{
    display: grid;
-   grid-template-areas: "item1  item2 "
-                         "item3 item4 "
-                         "item5 item6"   ;                      
+   grid-template-columns: auto auto auto;                      
    gap: 10px;
    justify-content: center; 
-}
-.gallery-item1 { grid-area: item1 }
-.gallery-item2 { 
-    grid-area: item2 ;
-    
+   padding-top: 30px;
 }
 
-    
-
-.gallery-item3 { grid-area: item3 }
-.gallery-item4 { grid-area: item4 }
-.gallery-item5 { grid-area: item5 }
-.gallery-item6 { grid-area: item6 }
 
 .galerry-container{
     text-align: center;
@@ -62,7 +56,47 @@
 .gallery-item-paragraph{
     color: gray;
 }    
+.some-text{
+    background-color: lightgrey;
+    padding: 20px;
+}
+@media screen and (max-width: 1800px) {
+    .gallery {
+        grid-template-columns: auto auto auto;
+    }
+    .some-text{
+        font-size: 150px;
+    }
+}
 
+@media screen and (max-width: 1500px) {
+    .gallery {
+        grid-template-columns: auto auto;
+    }
+    .some-text{
+        font-size: 120px;
+        background-color: aqua;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+        grid-template-columns: auto ;
+    }
+    .some-text{
+        font-size: 50px;
+        background-color: rgb(112, 126, 33);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    .some-text{
+        font-size: 40px;
+        background-color: brown;
+    }
+}
 
 
 
